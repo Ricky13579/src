@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 소개</title>
+    <style>
+        body{
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            align-self: center;
+        }
+        .paper{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            width: 600px;
+            height: 800px;
+        }
+        .profile{
+            display: flex;
+            flex-direction: row;
+            align-self:baseline;
+            margin-left: 10px;
+        }
+        #proimg{
+            width: 200px;
+            height: 250px;
+            border: solid 1px black;
+        }
+        li{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .table{
+            flex-direction: row;
+            margin-top: 5px;
+            width: 80%;
+        }
+        caption{
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        tr{
+            height: 20px;
+        }
+        th{
+            font-size: 10pt;
+        }
+        .picture{
+            display: flex;
+            flex-direction: row;
+            align-self: baseline;
+            margin-top: 10px;
+            width: 30%;
+            height: 200px;
+        }
+        #logoimg{
+            border: solid 1px black;
+            margin: 5px;
+            width: 100%;
+            height: 200px;
+        }
+        footer{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--이제까지 배운 내용을 이용해서 자기 소개페이지를 작성하세요.-->
+    <div class="paper">
+        <h1>자기소개 페이지</h1>
+        <div class="profile">
+            <img src="D:\study\html\src\html\day02\nika.jpg" alt="사진" id="proimg">
+            <ul>
+                <li>이름 : 지명준</li>
+                <li>나이 : 만23살</li>
+                <li>성별 : 남성</li>
+                <li>최종학력 : 대졸(전문대졸업)</li>
+                <li>전화번호 : 010-****-****</li>
+                <li>이메일 : wp******@naver.com</li>
+                <li>취미 : 1. 축구경기 관람하기(라이브 선호)</li>
+                <li>취미 : 2. 애니메이션 시청</li>
+            </ul>
+        </div>
+        <table border="1" class="table">
+            <caption>그 밖의 세부사항</caption>
+            <thead>
+                <tr style="background-color: lightgray;">
+                    <th colspan="3">내가 좋아하는 축구팀</th>
+                </tr>
+            </thead>
+           <tbody>
+            <tr>
+                <th id="son">1. 토트넘 핫스퍼</th>
+                <th id="klopp">2. 리버풀</th>
+                <th id="rival">3. 아스날</th>
+            </tr>
+           </tbody>
+           <thead>
+            <tr style="background-color: lightgray;">
+                <th colspan="3">요새 내가 별로라고 생각하는 축구팀</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <th id="mangu">1. 맨체스터 유나이티드</th>
+            <th id="xavi">2. 바르셀로나</th>
+            <th id="hell">3. 바이에른 뮌헨</th>
+        </tr>
+       </tbody>
+        </table>
+        <div class="picture" id="picture">
+            <img src="son.jpg" id="logoimg">
+            <img src="klopp.jpg" id="logoimg">
+            <img src="rival.jpg" id="logoimg">
+        </div>
+        <footer>
+            <strong>꾸준히 공부하면서 취업이 되는 그날까지 아자아자 화이팅!!!!!!!!!</strong>
+        </footer>
+    </div>
+</body>
+</html>
