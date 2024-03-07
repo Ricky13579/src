@@ -1,0 +1,22 @@
+h3{
+    color: orange;
+    background-color: yellow;
+}
+#h302{
+    color: lightgray;
+}
+.h3-3{
+    border: 3px dotted purple;
+}
+
+/* pre 태그중 클래스가 h3-3인 태그를 선택해서 배경색을 pink로 바꾸자
+    ==>
+
+        pre.h3-3{}
+
+        참고 ]
+            pre. h3-3{}
+*/
+pre.h3-3{
+    background-color: pink;
+}

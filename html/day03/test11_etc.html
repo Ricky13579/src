@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 만들기</title>
+    <style>
+        .fr{
+            text-align: center;
+        }
+
+        .content{
+            display: inline-block;
+            width: 600px;
+        }
+
+        h1{
+            background-color: rgb(0, 156, 255);
+            padding: 10px;
+            color: white;
+        }
+
+        #d1>img{
+            width: 300px;
+            height: auto;
+            border: 10px dotted pink;
+        }
+
+        .btn{
+            width: 50%;
+            height: 50px;
+            float: left;
+            cursor: pointer;
+            line-height: 300%;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        #btn1{
+            background-color: orange;
+        }
+
+        #btn2{
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="fr">
+        <div class="content">
+            <h1>버튼 만들기</h1>
+            <div id="d1">
+                <img src="../img/태양신니카.jpg" id="nika">
+            </div>
+            <div>
+                <div class="btn" id="btn1">난 분명 죽었는데</div>
+                <div class="btn" id="btn2">왜 아직 서 있는 거지? 재미있다 아하하하</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var btn1=document.getElementById('btn1');
+    var btn2=document.getElementById('btn2');
+    var nika=document.getElementById('nika');
+    btn1.onclick=function(){
+        nika.src=' ';
+    };
+    btn2.onclick=function(){
+        nika.src='../img/태양신니카.jpg';
+    }
+</script>
+</html>

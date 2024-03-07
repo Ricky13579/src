@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test05.css" type="text/css">
+    <title>css 우선순위</title>
+    <style>
+        p{
+            color: blue;
+        }
+
+        p{
+            color: yellow;
+        }        
+    </style>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p style="color: deeppink;">CSS는 정의하는 위치가 중요하다.</p>
+</body>
+</html>

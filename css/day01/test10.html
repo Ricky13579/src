@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style type="text/css">
+        p{
+            text-align: center;
+        }
+
+        label{
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            text-align: right;
+            font-size: 16pt;
+            font-weight: bold;
+            color: gray;
+        }
+
+        input{
+            display: inline-block;
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-bottom: 2px solid darkgray;
+        }
+
+        button{
+            display: inline-block;
+            width: 200px;
+            height: 35px;
+            font-size: 14pt;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /*타입 속성과 타입속성값으로 태그 선택하는 방법*/
+        [type="reset"]{
+            background-color: orange;
+        }
+
+        [type="submit"]{
+            background-color: rgb(28, 199, 199);
+            color: white;
+        }
+
+        [type="text"]:focus{
+            background-color: rgb(195, 241, 255);
+            border: 1px solid blue;
+        }
+
+        [type="password"]:focus{
+            background-color: rgb(255, 243, 222);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <label for="name">이름 : </label>
+        <input type="text" name="name" id="name">
+    </p>
+    <p>
+        <label for="pw">비밀번호 : </label>
+        <input type="password" name="pw" id="pw">
+    </p>
+    <p>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </p>
+</body>
+</html>
