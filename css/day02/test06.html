@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style type="text/css">
+        p{
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+            font-size: 16pt;
+        }
+
+        p.pad{
+            /*클래스가 pad인 p 태그 선택*/
+            color: purple;
+            padding : 20px;
+            margin-top: 50px;
+        }
+        
+        /* p:nth-child(3) */
+        p.mar{
+            /*클래스가 mar인 p 태그 선택*/
+            color: green;
+            margin: 30px;
+        }
+        
+        /* p:nth-child(4) */
+        p.mp{
+            /*클래스가 mp인 p 태그 선택*/
+            padding: 5%;
+            margin: 5%;
+        }
+    </style>
+</head>
+<body>
+    <p>박스의 안쪽여백과 바깥쪽 여백 지정</p>
+    <p class="pad">1. 안쪽 여백 지정 : padding 20px</p>
+    <p class="mar">2. 바깥쪽 여백 지정 : margin 30px</p>
+    <p class="mp">3. 안쪽 바깥쪽 여백 지정 : margin 5%, padding 5%</p>
+</body>
+</html>

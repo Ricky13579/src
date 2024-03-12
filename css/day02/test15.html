@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style type="text/css">
+        .content>*{
+            border: 1px solid gray;
+            text-align: center;
+            margin: 0 0 10px;
+        }
+
+        nav{
+            width: 150px;
+            height: 300px;
+            float: left;
+        }
+        
+        section{
+            width: 300px;
+            height: 300px;
+        }
+        section>*{
+            background-color: yellowgreen;
+        }
+        aside{
+            width: 150px;
+            height:300px;
+            float: right;
+        }
+        footer{
+            clear: both;
+            height: 70px;
+        }
+        .content{
+            width: 606px;
+            height: 602px;
+            margin: 0px auto;
+        }
+        section>:last-child{
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <header>
+        <h1>title</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+            <li>menu 4</li>
+        </ul>
+    </nav>
+    <section>
+        <header>
+            <h3>section title</h3>
+        </header>
+            <article>
+                article
+            </article>
+            <footer>
+                section footer
+            </footer>
+    </section>
+    <aside>
+        <div>banner1</div>
+    </aside>
+    <footer>
+        main footer
+    </footer>
+</div>
+</body>
+</html>

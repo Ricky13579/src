@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style type="text/css">
+        li{
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+        li>a:first-child{
+            background-color: red;
+            text-decoration: none;
+            color: white;
+        }
+
+        li:first-child>a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">주의사항 1</a></li>
+        <li><a href="#">주의사항 2</a></li>
+        <li><a href="#">주의사항 3</a></li>
+        <li><a href="#">주의사항 4</a></li>
+        <li><a href="#">주의사항 5</a></li>
+    </ul>
+</body>
+</html>
